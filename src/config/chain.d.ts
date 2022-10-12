@@ -14,6 +14,7 @@ export const CHAIN_ID: Record<ChainName, ChainId> = {
   RINKEBY: '4',
   VOLTA: '73799',
   TLOS: '40',
+  TLOS_TESTNET: '41',
 }
 
 // Values match that required of onboard and returned by CGW
