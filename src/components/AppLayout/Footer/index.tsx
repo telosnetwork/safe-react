@@ -1,12 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles'
 import cn from 'classnames'
 import * as React from 'react'
-import { useDispatch } from 'react-redux'
+//import { useDispatch } from 'react-redux'
 //import AppstoreButton from 'src/components/AppstoreButton'
 
-import GnoButtonLink from 'src/components/layout/ButtonLink'
+//import GnoButtonLink from 'src/components/layout/ButtonLink'
 import Link from 'src/components/layout/Link'
-import { openCookieBanner } from 'src/logic/cookies/store/actions/openCookieBanner'
+//import { openCookieBanner } from 'src/logic/cookies/store/actions/openCookieBanner'
 import { secondary, sm } from 'src/theme/variables'
 
 const useStyles = makeStyles({
@@ -49,28 +49,32 @@ const Footer = (): React.ReactElement => {
   const appVersion = process.env.REACT_APP_APP_VERSION ? `v${process.env.REACT_APP_APP_VERSION} ` : 'Versions'
   const date = new Date()
   const classes = useStyles()
-  const dispatch = useDispatch()
+  //const dispatch = useDispatch()
 
-  const openCookiesHandler = () => {
+  /* const openCookiesHandler = () => {
     dispatch(openCookieBanner({ cookieBannerOpen: true }))
   }
-
+ */
   return (
     <footer className={classes.footer}>
       <span className={classes.item}>©{date.getFullYear()} Telos Safe</span>
       <span className={classes.sep}>|</span>
-      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/terms">
+      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://www.telos.net/">
+        Telos Foundation
+      </Link>
+      <span className={classes.sep}>|</span>
+      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://www.telos.net/terms-of-service">
         Terms
       </Link>
       <span className={classes.sep}>|</span>
-      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/privacy">
+      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://www.telos.net/privacy-policy">
         Privacy
       </Link>
       <span className={classes.sep}>|</span>
       <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/licenses">
-        Licenses
+        Gnosis-Safe Licenses
       </Link>
-      <span className={classes.sep}>|</span>
+      {/* <span className={classes.sep}>|</span>
       <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/imprint">
         Imprint
       </Link>
@@ -78,10 +82,10 @@ const Footer = (): React.ReactElement => {
       <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/cookie">
         Cookie Policy
       </Link>
-      <span className={classes.sep}>-</span>
+      <span className={classes.sep}>|</span>
       <GnoButtonLink className={cn(classes.item, classes.link, classes.buttonLink)} onClick={openCookiesHandler}>
         Preferences
-      </GnoButtonLink>
+      </GnoButtonLink> */}
       <span className={classes.sep}>|</span>
       <Link
         className={cn(classes.item, classes.link)}
