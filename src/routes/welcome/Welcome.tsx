@@ -32,7 +32,7 @@ function Welcome(): ReactElement {
                 <Text size="xl">You will be required to pay a network fee for creating your new Safe.</Text>
               </CardDescriptionContainer>
               <Track {...CREATE_SAFE_EVENTS.CREATE_BUTTON}>
-                <Button size="lg" color="primary" variant="contained" component={Link} to={OPEN_SAFE_ROUTE}>
+                <Button size="lg" color="secondary" variant="contained" component={Link} to={OPEN_SAFE_ROUTE}>
                   <Text size="xl" color="white">
                     + Create new Safe
                   </Text>

@@ -33,7 +33,7 @@ import {
 
 const palette = {
   primary: {
-    main: primary,
+    main: secondary,
   },
   secondary: {
     main: secondary,

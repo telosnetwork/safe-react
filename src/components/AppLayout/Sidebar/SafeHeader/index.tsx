@@ -17,6 +17,7 @@ import Paragraph from 'src/components/layout/Paragraph'
 import { getChainInfo, getExplorerInfo } from 'src/config'
 import {
   secondary,
+  secondaryLite,
   border,
   fontColor,
   background,
@@ -84,6 +85,10 @@ const StyledButton = styled(Button)`
     width: 100%;
     height: 38px;
     padding: 0 12px;
+    background-color: ${secondary};
+  }
+  &&.MuiButton-root:hover {
+    background-color: ${secondaryLite};
   }
 `
 

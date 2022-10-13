@@ -46,7 +46,7 @@ export const Card = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
   font-weight: bold;
   display: flex;
   align-items: center;

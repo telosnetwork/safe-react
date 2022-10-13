@@ -55,7 +55,7 @@ const SpendingLimit = (): ReactElement => {
               <Track {...SETTINGS_EVENTS.SPENDING_LIMIT.NEW_LIMIT}>
                 <Button
                   className={classes.actionButton}
-                  color="primary"
+                  color="secondary"
                   size="md"
                   data-testid="new-spending-limit-button"
                   onClick={openNewSpendingLimitModal}
