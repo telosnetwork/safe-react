@@ -71,6 +71,10 @@ const Footer = (): React.ReactElement => {
         Privacy
       </Link>
       <span className={classes.sep}>|</span>
+      <Link className={cn(classes.item, classes.link)} target="_blank" to="https://help.gnosis-safe.io/">
+        Help Center
+      </Link>
+      <span className={classes.sep}>|</span>
       <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/licenses">
         Gnosis-Safe Licenses
       </Link>
