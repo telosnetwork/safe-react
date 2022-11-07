@@ -13,6 +13,8 @@ const STORAGE_KEYS: Record<ChainId, string> = {
   '246': 'ENERGY_WEB_CHAIN',
   '42161': 'ARBITRUM',
   '73799': 'VOLTA',
+  '40': 'TLOS',
+  '41': 'TLOS_TESTNET',
 }
 
 export const storage = new Storage(window.localStorage, '')

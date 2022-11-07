@@ -148,7 +148,7 @@ const Coins = (props: Props): React.ReactElement => {
                   {granted && (
                     <Track {...ASSETS_EVENTS.SEND}>
                       <StyledButton
-                        color="primary"
+                        color="secondary"
                         onClick={() => showSendFunds(row.asset.address)}
                         size="md"
                         variant="contained"
@@ -162,7 +162,7 @@ const Coins = (props: Props): React.ReactElement => {
                     </Track>
                   )}
                   <Track {...ASSETS_EVENTS.RECEIVE}>
-                    <StyledButton color="primary" onClick={showReceiveFunds} size="md" variant="contained">
+                    <StyledButton color="secondary" onClick={showReceiveFunds} size="md" variant="contained">
                       <FixedIcon type="arrowReceivedWhite" />
                       <Text size="xl" color="white">
                         Receive

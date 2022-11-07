@@ -291,7 +291,7 @@ const AddressBookTable = (): ReactElement => {
                         {granted && (
                           <Track {...ADDRESS_BOOK_EVENTS.SEND}>
                             <StyledButton
-                              color="primary"
+                              color="secondary"
                               onClick={() => {
                                 setSelectedEntry({ entry: row })
                                 setSendFundsModalOpen(true)

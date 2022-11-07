@@ -43,16 +43,16 @@ export const StyledListItem = styled(ListItem)<ListItemProps>`
   &.MuiListItem-root.Mui-selected {
     background-color: ${primaryLite};
     border-radius: 8px;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
     span {
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.secondary};
 
       & svg {
-        fill: ${({ theme }) => theme.colors.primary};
+        fill: ${({ theme }) => theme.colors.secondary};
       }
     }
     .icon-color {
-      fill: ${({ theme }) => theme.colors.primary};
+      fill: ${({ theme }) => theme.colors.secondary};
     }
   }
 
@@ -96,12 +96,12 @@ const StyledListSubItem = styled(ListItem)<ListItemProps>`
   &.MuiButtonBase-root.MuiListItem-root.Mui-selected {
     background-color: ${background};
     border-radius: 8px;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
     span {
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.secondary};
     }
     .icon-color {
-      fill: ${({ theme }) => theme.colors.primary};
+      fill: ${({ theme }) => theme.colors.secondary};
     }
   }
 `

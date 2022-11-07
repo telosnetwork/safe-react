@@ -6,7 +6,7 @@ import { SET_SHOW_SHORT_NAME } from '../actions/setShowShortName'
 export const APPEARANCE_REDUCER_ID = 'appearance'
 
 export const initialAppearanceState = {
-  copyShortName: true,
+  copyShortName: false,
   showShortName: true,
 }
 
